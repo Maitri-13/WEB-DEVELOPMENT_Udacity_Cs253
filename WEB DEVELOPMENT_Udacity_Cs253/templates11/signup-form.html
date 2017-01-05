@@ -1,0 +1,41 @@
+<a href="http://my-voice-1271.appspot.com/login">To login</a>
+
+
+<form method="post">
+<b>New users registration </b>
+<br>
+
+<label>
+Username
+<input type="text" name="username" value = "{{username}}">
+</label>
+<class = "error">
+{{error_username}} 
+
+<br>
+<label>
+Password
+<input type="Password" name="password" value="">
+</label>
+<class = "error">
+{{error_password}} 
+
+<br>
+<label>
+Verify Password
+<input type="Password" name="verify" value ="">
+</label>
+<class = "error">
+{{error_verify}} 
+
+<br>
+<label>
+Email(optional)
+<input type="text" name="email" value = "{{email}}">
+</label>
+<class = "error">
+{{error_email}} 
+<br>
+
+<input type="submit">
+</form>

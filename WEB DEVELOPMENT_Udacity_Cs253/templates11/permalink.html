@@ -1,0 +1,6 @@
+<a href="http://my-voice-1271.appspot.com/blog/">Return to main page</a>
+{% extends "base.html" %}
+
+{% block content %}
+	{{post.render() | safe}}
+{% endblock %}

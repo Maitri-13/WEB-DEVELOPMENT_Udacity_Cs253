@@ -1,0 +1,25 @@
+{% extends "base.html" %} 
+
+{% block content %}
+
+	{% for p in posts %}
+		{{p.render() | safe}}
+		<br><br>
+	{% endfor %}
+	
+
+                <div class="fixed-action-btn" style="bottom: 45px; right: 24px;">
+					<div class="right">
+						{% if user %}
+							<a class="btn-floating btn-large waves-effect waves-light red" href="/blog/newpost"><i class="material-icons">add</i></a>
+						{% else %}
+							<a class="login-link" href="/logout"></a>
+						{% endif %}
+					</div> 
+					
+            </div>
+			
+	<div class="card">
+    </div>
+            
+{% endblock %}

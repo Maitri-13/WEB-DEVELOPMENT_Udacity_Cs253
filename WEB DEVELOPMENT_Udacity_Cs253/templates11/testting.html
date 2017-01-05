@@ -1,0 +1,29 @@
+
+	<head>
+		<title>BlogIt@Maitri</title>
+	</head>
+	<body>
+	<form method="post">
+		<div>title</div>
+		<input type="text" name = "subject" value="{{title}}">	
+		<br>
+		<br>
+		<div>article</div>
+		<textarea name = "content" >{{article}}</textarea>
+		<br>
+		<br>
+		<button>Submit</button>
+		
+		<div class = "error">{{error}}</div>
+	</form>
+	
+	<hr>
+	
+	{% for art in arts %}
+		<div class = "Content">
+			<div class = "content title">{{content.title}}</div>
+			<pre class = "content body">{{content.art}}</pre>
+		</div>
+	{% endfor %}
+	</body>
+	

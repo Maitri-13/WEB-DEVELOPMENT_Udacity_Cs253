@@ -1,0 +1,31 @@
+
+<div class = "post">
+	<div classs="row">
+		<div class="col s12 m6">
+		<div class= "card white">
+		<div class="card-content black-text">
+			<span class="card-subject"></span>
+			<p> 
+			<blockquote>
+			<div class ="post-title">
+			<div class="card-suject blue-text">
+			{{p.subject}}
+		    </div>
+			</blockquote>
+			</p>
+			<div class = "post-content">
+			{{p._render_text | safe}}
+			</div>
+			<br>
+		<div class="card-action">
+			<div class = "post-date">
+			{{p.created.strftime("%b %d, %Y")}}
+			</div>
+			
+		</div>
+		</div>
+	</div>
+	</div>
+</div>
+</div>
+		

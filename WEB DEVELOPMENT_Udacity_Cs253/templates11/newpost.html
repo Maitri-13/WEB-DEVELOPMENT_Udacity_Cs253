@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+
+{% block content %}
+	<body>
+	<form method="post">
+		<div>subject</div>
+		<input type="text" name = "subject" value="{{subject}}">	
+		<br>
+		<br>
+		<div>content</div>
+		<textarea name = "content" value = "{{content}}"></textarea>
+		<br>
+		<br>
+		<button>Submit</button>
+		
+		<div class = "error">{{error}}</div>
+	</form>
+	
+	</body>
+
+{% endblock %}

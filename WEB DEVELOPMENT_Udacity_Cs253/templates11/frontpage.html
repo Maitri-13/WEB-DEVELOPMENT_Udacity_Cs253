@@ -1,0 +1,10 @@
+	<a href="http://my-voice-1271.appspot.com/blog/newpost">creating new posts</a>
+	<a href="http://my-voice-1271.appspot.com/login">To Logout</a>
+{% extends "base.html" %}
+
+{% block content %}
+	{% for p in posts %}
+		{{p.render() | safe}}
+		<br><br>
+	{% endfor %}
+{% endblock %}

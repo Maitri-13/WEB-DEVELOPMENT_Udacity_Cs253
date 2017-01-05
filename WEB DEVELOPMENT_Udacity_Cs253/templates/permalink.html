@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+{% block content %}
+	{{post.render() | safe}}
+	
+	<div class="fixed-action-btn horizontal click-to-toggle" style="bottom: 45px; right: 24px;">
+    <a class="btn-floating btn-large red" href="/blog">
+      <i class="material-icons">menu</i>
+    </a>
+	
+	</div>
+{% endblock %}
